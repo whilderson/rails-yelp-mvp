@@ -1,0 +1,8 @@
+<h1>All Restaurants</h1>
+<ul class="list-unstyled">
+  <% @restaurants.each do |restaurant| %>
+    <li><%= link_to restaurant.name, restaurant_path(restaurant) %> - <%= restaurant.category %></li>
+  <% end %>
+</ul>
+<hr>
+<%= link_to "New Restaurant", new_restaurant_path, :class => "btn btn-primary" %>

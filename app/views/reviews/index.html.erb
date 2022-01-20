@@ -1,0 +1,2 @@
+<h1>Reviews for <%= Restaurant.find(params[:restaurant_id]).name %></h1>
+<%= render 'show_reviews', reviews: @reviews %>
